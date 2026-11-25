@@ -28,3 +28,13 @@ services:
     tty: true
 ###> symfony/mercure-bundle ###
 ###< symfony/mercure-bundle ###
+
+  ###> doctrine/doctrine-bundle ###
+  database:
+    ports:
+      - "127.0.0.1:3306:3306"
+  ###< doctrine/doctrine-bundle ###
+
+  rabbitmq:
+    ports:
+      - "127.0.0.1:15672:15672"
